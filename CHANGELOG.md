@@ -1,4 +1,15 @@
 ## Changelog
 
-- initial commit (Mark Quinn)
+- Merge pull request #4 from finsite/dependabot/docker/python-3.13-slim (Mark)
+- Merge pull request #6 from finsite/dependabot/github_actions/dot-github/workflows/engineerd/setup-kind-0.6.2 (Mark)
+- Merge pull request #7 from finsite/dependabot/github_actions/dot-github/workflows/actions/setup-python-5 (Mark)
+- Merge pull request #5 from finsite/dependabot/github_actions/dot-github/workflows/actions/stale-9 (Mark)
+- Merge pull request #3 from finsite/dependabot/github_actions/dot-github/workflows/pozil/auto-assign-issue-2 (Mark)
+- Merge pull request #2 from finsite/dependabot/github_actions/dot-github/workflows/actions/labeler-5 (Mark)
 - bump: patch version + changelog [skip ci] (github-actions[bot])
+- Bump actions/setup-python from 2 to 5 in /.github/workflows (dependabot[bot])
+- Bump engineerd/setup-kind from 0.5.0 to 0.6.2 in /.github/workflows (dependabot[bot])
+- Bump actions/stale from 5 to 9 in /.github/workflows (dependabot[bot])
+- Bump python from 3.12-slim to 3.13-slim (dependabot[bot])
+- Bump pozil/auto-assign-issue from 1 to 2 in /.github/workflows (dependabot[bot])
+- Bump actions/labeler from 4 to 5 in /.github/workflows (dependabot[bot])
