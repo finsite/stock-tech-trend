@@ -6,7 +6,7 @@ import pandas as pd
 from ta.trend import ADXIndicator, PSARIndicator
 
 from app.logger import setup_logger
-
+from app.output_handler import send_to_output
 # Initialize logger
 logger = setup_logger(__name__)
 
