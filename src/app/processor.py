@@ -1,12 +1,10 @@
-"""
-Processor module for trend analysis using ADX, Parabolic SAR, and MA crossovers.
-"""
+"""Processor module for trend analysis using ADX, Parabolic SAR, and MA crossovers."""
 
 import pandas as pd
 from ta.trend import ADXIndicator, PSARIndicator
 
 from app.logger import setup_logger
-from app.output_handler import send_to_output
+
 # Initialize logger
 logger = setup_logger(__name__)
 
@@ -48,12 +46,16 @@ def analyze_trend(data: pd.DataFrame) -> pd.DataFrame:
         # SMA Crossover
         data["SMA_20"] = data["Close"].rolling(window=20).mean()
         data["SMA_50"] = data["Close"].rolling(window=50).mean()
-        data["SMA_Crossover_Signal"] = (data["SMA_20"] > data["SMA_50"]).astype(int).replace({0: -1})
+        data["SMA_Crossover_Signal"] = (
+            (data["SMA_20"] > data["SMA_50"]).astype(int).replace({0: -1})
+        )
 
         # EMA Crossover
         data["EMA_12"] = data["Close"].ewm(span=12, adjust=False).mean()
         data["EMA_26"] = data["Close"].ewm(span=26, adjust=False).mean()
-        data["EMA_Crossover_Signal"] = (data["EMA_12"] > data["EMA_26"]).astype(int).replace({0: -1})
+        data["EMA_Crossover_Signal"] = (
+            (data["EMA_12"] > data["EMA_26"]).astype(int).replace({0: -1})
+        )
 
         # Trend Strength
         data["Trend_Strength"] = data["ADX"].apply(classify_trend_strength)

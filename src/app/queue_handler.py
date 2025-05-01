@@ -1,8 +1,8 @@
 """
 Handles message queue consumption for RabbitMQ and SQS.
 
-This module receives stock data, applies trend analysis, and sends
-processed results to the output handler.
+This module receives stock data, applies trend analysis, and sends processed results to
+the output handler.
 """
 
 import json

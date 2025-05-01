@@ -1,6 +1,4 @@
-"""
-Queue sender module for publishing processed stock analysis to RabbitMQ or SQS.
-"""
+"""Queue sender module for publishing processed stock analysis to RabbitMQ or SQS."""
 
 import json
 import os
