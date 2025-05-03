@@ -10,6 +10,7 @@ import os
 import time
 
 import boto3
+import pandas as pd  # ✅ Required for DataFrame conversions
 import pika
 from botocore.exceptions import BotoCoreError, NoCredentialsError
 
