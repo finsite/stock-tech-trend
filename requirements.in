@@ -15,4 +15,4 @@ matplotlib>=3.6.0,<4.0
 ta>=0.10.2
 
 #vault integration
-hvac>=1.1.0
+hvac>=1.2.1,<2.0.0
