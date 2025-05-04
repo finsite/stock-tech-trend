@@ -113,10 +113,11 @@ def analyze_trend(data: pd.DataFrame) -> pd.DataFrame:
     - Trend strength classification
 
     Args:
-        data (pd.DataFrame): Stock data with columns ['High', 'Low', 'Close'].
+      data(pd.DataFrame): Stock data with columns ['High', 'Low', 'Close'].
+      data: pd.DataFrame:
 
     Returns:
-        pd.DataFrame: Original data with trend indicators and signals added.
+      pd.DataFrame: Original data with trend indicators and signals added.
     """
     try:
         required_cols = {"High", "Low", "Close"}
@@ -168,10 +169,11 @@ def classify_trend_strength(adx_value: float) -> str:
     Classifies trend strength based on ADX value.
 
     Args:
-        adx_value (float): ADX value.
+      adx_value(float): ADX value.
+      adx_value: float:
 
     Returns:
-        str: 'Weak', 'Moderate', or 'Strong'
+      str: 'Weak', 'Moderate', or 'Strong'
     """
     if pd.isna(adx_value):
         return "Unknown"

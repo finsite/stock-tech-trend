@@ -25,6 +25,10 @@ def main() -> None:
 
     This service listens to messages from a queue (RabbitMQ or SQS), applies trend
     analysis, and publishes the results to a designated output.
+
+    Args:
+
+    Returns:
     """
     logger.info("Starting Trend Analysis Service...")
     consume_messages()
