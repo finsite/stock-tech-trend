@@ -20,7 +20,7 @@
 
 - (Placeholder for new changes)
 
-## [0.1.40] - 2025-04-27
+## [0.1.49] - 2025-04-27
 
 - Merge branch 'main' of https://github.com/finsite/stock-tech-trend (Mark Quinn)
 - Making sure Dockerfile is correct (Mark Quinn)
