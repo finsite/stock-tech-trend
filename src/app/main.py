@@ -1,8 +1,8 @@
-"""
-Main entry point for the Stock-Tech-Trend module.
+"""Main entry point for the Stock-Tech-Trend module.
 
-This script initializes the service, sets up logging, and starts consuming messages from
-the configured message queue for trend analysis (ADX, Parabolic SAR, MA crossovers).
+This script initializes the service, sets up logging, and starts
+consuming messages from the configured message queue for trend analysis
+(ADX, Parabolic SAR, MA crossovers).
 """
 
 import os
@@ -19,9 +19,8 @@ logger = setup_logger(__name__)
 
 
 def main() -> None:
-    """
-    Starts the Trend Analysis Service by consuming stock data messages and processing
-    trend indicators.
+    """Starts the Trend Analysis Service by consuming stock data messages and
+    processing trend indicators.
 
     This service listens to messages from a queue (RabbitMQ or SQS), applies trend
     analysis, and publishes the results to a designated output.
@@ -29,6 +28,7 @@ def main() -> None:
     Args:
 
     Returns:
+
     """
     logger.info("Starting Trend Analysis Service...")
     consume_messages()
