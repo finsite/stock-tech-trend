@@ -28,7 +28,6 @@ def main() -> None:
     Args:
 
     Returns:
-
     """
     logger.info("Starting Trend Analysis Service...")
     consume_messages()
