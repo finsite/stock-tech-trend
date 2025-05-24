@@ -26,8 +26,11 @@ def main() -> None:
     analysis, and publishes the results to a designated output.
 
     Args:
+    ----
 
     Returns:
+    -------
+
     """
     logger.info("Starting Trend Analysis Service...")
     consume_messages()
