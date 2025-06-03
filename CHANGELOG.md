@@ -4,6 +4,12 @@
 - Making sure Dockerfile is correct (Mark Quinn)
 - bump: patch version + changelog [skip ci] (github-actions[bot])
 
+## v0.3.3 (2025-06-03)
+
+### Fix
+
+- **deps**: recompile requirements-dev.txt and resolve conflicts
+
 ## v0.3.2 (2025-06-03)
 
 ### Fix
