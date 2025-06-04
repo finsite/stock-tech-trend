@@ -107,24 +107,27 @@ logger = setup_logger(__name__)
 def analyze_trend(data: pd.DataFrame) -> pd.DataFrame:
     """Analyzes stock trends using ADX, Parabolic SAR, and Moving Average
     Crossovers.
-
+    
     Adds the following indicators:
     - ADX, +DI, -DI
     - Parabolic SAR
     - SMA and EMA crossovers
     - Trend strength classification
-
+    
     Args:
     ----
       data(pd.DataFrame): Stock data with columns ['High', 'Low', 'Close'].
       data: pd.DataFrame:
       data: pd.DataFrame:
       data: pd.DataFrame:
-
+    
     Returns:
     -------
       pd.DataFrame: Original data with trend indicators and signals added.
 
+    :param data: pd.DataFrame: 
+
+    
     """
     try:
         required_cols = {"High", "Low", "Close"}
@@ -173,18 +176,21 @@ def analyze_trend(data: pd.DataFrame) -> pd.DataFrame:
 
 def classify_trend_strength(adx_value: float) -> str:
     """Classifies trend strength based on ADX value.
-
+    
     Args:
     ----
       adx_value(float): ADX value.
       adx_value: float:
       adx_value: float:
       adx_value: float:
-
+    
     Returns:
     -------
       str: 'Weak', 'Moderate', or 'Strong'
 
+    :param adx_value: float: 
+
+    
     """
     if pd.isna(adx_value):
         return "Unknown"

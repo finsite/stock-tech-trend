@@ -41,7 +41,7 @@ if QUEUE_TYPE == "sqs":
 
 
 def connect_to_rabbitmq() -> pika.BlockingConnection:
-    """"""
+    """ """
     retries = 5
     while retries > 0:
         try:
@@ -57,7 +57,7 @@ def connect_to_rabbitmq() -> pika.BlockingConnection:
 
 
 def consume_rabbitmq() -> None:
-    """"""
+    """ """
     connection = connect_to_rabbitmq()
     channel = connection.channel()
 
@@ -77,9 +77,12 @@ def consume_rabbitmq() -> None:
           body: bytes:
           body: bytes:
 
-        Returns
-        -------
+        :param ch: 
+        :param method: 
+        :param properties: 
+        :param body: bytes: 
 
+        
         """
         try:
             message = json.loads(body)
@@ -116,7 +119,7 @@ def consume_rabbitmq() -> None:
 
 
 def consume_sqs() -> None:
-    """"""
+    """ """
     if not sqs_client or not SQS_QUEUE_URL:
         logger.error("SQS not initialized or missing queue URL.")
         return
