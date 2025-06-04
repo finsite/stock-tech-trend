@@ -124,13 +124,11 @@ def analyze_trend(data: pd.DataFrame) -> pd.DataFrame:
     :param data: pd.DataFrame:
     :param data: pd.DataFrame:
     :param data: pd.DataFrame:
-    :param data: 
-    :type data: pd.DataFrame :
-    :param data: 
-    :type data: pd.DataFrame :
+    :param data: type data: pd.DataFrame :
+    :param data: type data: pd.DataFrame :
+    :param data: pd.DataFrame:
     :param data: pd.DataFrame: 
 
-    
     """
     try:
         required_cols = {"High", "Low", "Close"}
@@ -190,13 +188,11 @@ def classify_trend_strength(adx_value: float) -> str:
     :param adx_value: float:
     :param adx_value: float:
     :param adx_value: float:
-    :param adx_value: 
-    :type adx_value: float :
-    :param adx_value: 
-    :type adx_value: float :
+    :param adx_value: type adx_value: float :
+    :param adx_value: type adx_value: float :
+    :param adx_value: float:
     :param adx_value: float: 
 
-    
     """
     if pd.isna(adx_value):
         return "Unknown"
