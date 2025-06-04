@@ -121,10 +121,6 @@ def analyze_trend(data: pd.DataFrame) -> pd.DataFrame:
       data: pd.DataFrame:
       data: pd.DataFrame:
 
-    Returns:
-    -------
-      pd.DataFrame: Original data with trend indicators and signals added.
-
     Parameters
     ----------
     data :
@@ -133,11 +129,14 @@ def analyze_trend(data: pd.DataFrame) -> pd.DataFrame:
         pd.DataFrame:
     data :
         pd.DataFrame:
+    data : pd.DataFrame :
+
     data: pd.DataFrame :
 
 
     Returns
     -------
+
 
     """
     try:
@@ -195,10 +194,6 @@ def classify_trend_strength(adx_value: float) -> str:
       adx_value: float:
       adx_value: float:
 
-    Returns:
-    -------
-      str: 'Weak', 'Moderate', or 'Strong'
-
     Parameters
     ----------
     adx_value :
@@ -207,11 +202,14 @@ def classify_trend_strength(adx_value: float) -> str:
         float:
     adx_value :
         float:
+    adx_value : float :
+
     adx_value: float :
 
 
     Returns
     -------
+
 
     """
     if pd.isna(adx_value):

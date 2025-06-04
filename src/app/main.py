@@ -28,9 +28,6 @@ def main() -> None:
     Args:
     ----
 
-    Returns:
-    -------
-
     Parameters
     ----------
 
