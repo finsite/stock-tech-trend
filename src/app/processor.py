@@ -126,6 +126,7 @@ def analyze_trend(data: pd.DataFrame) -> pd.DataFrame:
       pd.DataFrame: Original data with trend indicators and signals added.
 
     :param data: pd.DataFrame:
+    :param data: pd.DataFrame:
     :param data: pd.DataFrame: 
 
     """
@@ -188,6 +189,7 @@ def classify_trend_strength(adx_value: float) -> str:
     -------
       str: 'Weak', 'Moderate', or 'Strong'
 
+    :param adx_value: float:
     :param adx_value: float:
     :param adx_value: float: 
 
