@@ -128,6 +128,7 @@ def analyze_trend(data: pd.DataFrame) -> pd.DataFrame:
     :param data: type data: pd.DataFrame :
     :param data: pd.DataFrame:
     :param data: pd.DataFrame:
+    :param data: pd.DataFrame:
     :param data: pd.DataFrame: 
 
     """
@@ -191,6 +192,7 @@ def classify_trend_strength(adx_value: float) -> str:
     :param adx_value: float:
     :param adx_value: type adx_value: float :
     :param adx_value: type adx_value: float :
+    :param adx_value: float:
     :param adx_value: float:
     :param adx_value: float:
     :param adx_value: float: 
