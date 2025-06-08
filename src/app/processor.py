@@ -3,7 +3,7 @@
 # import pandas as pd
 # from ta.trend import ADXIndicator, PSARIndicator
 
-# from app.logger import setup_logger
+# from app.utils.setup_logger import setup_logger
 
 # # Initialize logger
 # logger = setup_logger(__name__)
@@ -98,7 +98,7 @@ import pandas as pd
 from pandas import Series
 from ta.trend import ADXIndicator, PSARIndicator
 
-from app.logger import setup_logger
+from app.utils.setup_logger import setup_logger
 
 # Initialize logger
 logger = setup_logger(__name__)
