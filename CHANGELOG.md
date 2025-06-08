@@ -56,7 +56,7 @@
 
 ### Feat
 
-- **versioning**: enforce version consistency across pyproject.toml, __init__.py, and changelog
+- **versioning**: enforce version consistency across pyproject.toml, **init**.py, and changelog
 
 ### Fix
 
@@ -166,7 +166,7 @@
 
 ### Feat
 
-- **versioning**: enforce version consistency across pyproject.toml, __init__.py, and changelog
+- **versioning**: enforce version consistency across pyproject.toml, **init**.py, and changelog
 
 ### Fix
 
