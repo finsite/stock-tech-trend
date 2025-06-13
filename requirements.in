@@ -16,3 +16,4 @@ ta>=0.10.2
 
 #vault integration
 hvac>=1.2.1,<2.0.0
+prometheus_client>=0.17.1
